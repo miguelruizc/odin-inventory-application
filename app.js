@@ -17,9 +17,13 @@ app.use('/equipment', equipmentRouter);
 app.use('/magic-relics', magicRelicsRouter);
 app.use('/potions', potionsRouter);
 app.use('/all', allRouter);
-app.use('/', allRouter);
-
-// TODO: 404
+app.use('/', (req, res, next) => {
+	if (req.url === '/') res.redirect('/all');
+	else next();
+});
+app.use((req, res, next) => {
+	res.status(404).render('404', { title: '404' });
+});
 
 mongoose
 	.connect(process.env.MONGODB_URI, {})
