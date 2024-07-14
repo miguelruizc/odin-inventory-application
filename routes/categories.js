@@ -13,8 +13,10 @@ router.get('/add', (req, res) => {
 	res.render('categories-add', { title: 'Add category' });
 });
 
-router.get('/:id', (req, res) => {
-	res.send('Details for id: ' + req.params.id);
+router.get('/:id', async (req, res) => {
+	const category = await Category.findById(req.params.id);
+	if (category) res.render('categories-detail.ejs', { title: 'Details', category });
+	else console.log('Error: no category match id');
 });
 
 module.exports = router;
