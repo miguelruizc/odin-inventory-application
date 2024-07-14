@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Magic relics",
+		"description": "Enchanted artifacts imbued with mystical properties, ranging from enhancing abilities to granting extraordinary powers."
+	},
+	{
+		"name": "Equipment",
+		"description": "Tools and weapons crafted for combat and utility, often enhanced with magical properties or made from rare materials."
+	},
+	{
+		"name": "Potions",
+		"description": "Magical elixirs and brews that bestow temporary enhancements or abilities upon the drinker, crafted through arcane alchemy."
+	}
+]
