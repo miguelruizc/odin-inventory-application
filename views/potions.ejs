@@ -9,7 +9,7 @@
 			<hr />
 			<% items.forEach(item => { %>
 			<div class="itemCard">
-				<h2><%= item.name %></h2>
+				<h2><a href="<%= item.url %>"><%= item.name %></a></h2>
 				<p>Description: <%= item.description %></p>
 				<p>Category: <%= item.category %></p>
 				<p>Stock: <%= item.stock %></p>

@@ -13,4 +13,8 @@ router.get('/add', (req, res) => {
 	res.render('categories-add', { title: 'Add category' });
 });
 
+router.get('/:id', (req, res) => {
+	res.send('Details for id: ' + req.params.id);
+});
+
 module.exports = router;

@@ -10,7 +10,7 @@ const ItemSchema = new Schema({
 });
 
 ItemSchema.virtual('url').get(function () {
-	return `/items/${this._id}`;
+	return `/all/${this._id}`;
 });
 
 ItemSchema.virtual('formattedPrice').get(function () {
