@@ -13,8 +13,10 @@ router.get('/add', (req, res) => {
 	res.render('all-add', { title: 'Add item' });
 });
 
-router.get('/:id', (req, res) => {
-	res.send('Details for id: ' + req.params.id);
+router.get('/:id', async (req, res) => {
+	const item = await Item.findById(req.params.id);
+	if (item) res.render('all-detail.ejs', { title: 'Details', item });
+	else console.log('Error: no item match id');
 });
 
 module.exports = router;
