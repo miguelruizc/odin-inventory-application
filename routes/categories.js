@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const Category = require('../models/Category');
 
-router.get('/', (req, res) => {
-	res.render('categories', { title: 'Categories' });
+router.get('/', async (req, res) => {
+	const categories = await Category.find({});
+
+	if (categories) res.render('categories', { title: 'Categories', categories });
+	else console.log('Error, no categories');
 });
 
 router.get('/add', (req, res) => {

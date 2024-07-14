@@ -7,7 +7,12 @@
 		<main>
 			<a href="/categories/add">Add category</a>
 			<hr />
-			-List of categories
+			<% categories.forEach(category => { %>
+			<div class="categoryCard">
+				<h2><%= category.name %></h2>
+				<p>Description: <%= category.description %></p>
+			</div>
+			<% }) %>
 		</main>
 	</body>
 </html>
