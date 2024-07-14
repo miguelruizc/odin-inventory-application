@@ -1,0 +1,5 @@
+-Insert forms
+    -Insert category
+    -Insert item (pass category if clicked from equipment/potions/magic-relics)
+-Update pages
+-Delete pages
