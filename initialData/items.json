@@ -1,442 +1,436 @@
 [
-	[
-		{
-			"name": "Amulet of Protection",
-			"description": "An amulet that provides a shield against physical attacks.",
-			"category": "Magic relics",
-			"price": "200 gold",
-			"stock": "8"
-		},
-		{
-			"name": "Ring of Invisibility",
-			"description": "A ring that grants temporary invisibility.",
-			"category": "Magic relics",
-			"price": "250 gold",
-			"stock": "5"
-		},
-		{
-			"name": "Crystal Ball",
-			"description": "A ball used for scrying and seeing distant places.",
-			"category": "Magic relics",
-			"price": "300 gold",
-			"stock": "4"
-		},
-		{
-			"name": "Phoenix Feather Charm",
-			"description": "A charm that grants one resurrection.",
-			"category": "Magic relics",
-			"price": "400 gold",
-			"stock": "3"
-		},
-		{
-			"name": "Staff of Wisdom",
-			"description": "A staff that enhances the wielder’s wisdom.",
-			"category": "Magic relics",
-			"price": "350 gold",
-			"stock": "6"
-		},
-		{
-			"name": "Orb of Time",
-			"description": "An orb that allows brief glimpses into the future.",
-			"category": "Magic relics",
-			"price": "500 gold",
-			"stock": "2"
-		},
-		{
-			"name": "Mirror of Truth",
-			"description": "A mirror that reveals the true nature of anyone who looks into it.",
-			"category": "Magic relics",
-			"price": "450 gold",
-			"stock": "4"
-		},
-		{
-			"name": "Boots of Swiftness",
-			"description": "Boots that increase the wearer’s speed.",
-			"category": "Magic relics",
-			"price": "220 gold",
-			"stock": "7"
-		},
-		{
-			"name": "Cloak of Shadows",
-			"description": "A cloak that grants the ability to blend into shadows.",
-			"category": "Magic relics",
-			"price": "280 gold",
-			"stock": "5"
-		},
-		{
-			"name": "Pendant of Healing",
-			"description": "A pendant that heals minor wounds over time.",
-			"category": "Magic relics",
-			"price": "260 gold",
-			"stock": "9"
-		},
-		{
-			"name": "Elven Ear Cuffs",
-			"description": "Cuffs that enhance hearing and detect whispers.",
-			"category": "Magic relics",
-			"price": "150 gold",
-			"stock": "12"
-		},
-		{
-			"name": "Dragon Scale Ring",
-			"description": "A ring made from dragon scales, granting immense strength.",
-			"category": "Magic relics",
-			"price": "370 gold",
-			"stock": "4"
-		},
-		{
-			"name": "Gem of Telepathy",
-			"description": "A gem that allows telepathic communication.",
-			"category": "Magic relics",
-			"price": "320 gold",
-			"stock": "3"
-		},
-		{
-			"name": "Wizard’s Hat",
-			"description": "A hat that boosts magical abilities.",
-			"category": "Magic relics",
-			"price": "200 gold",
-			"stock": "10"
-		},
-		{
-			"name": "Tome of Ancient Knowledge",
-			"description": "A book that contains forgotten spells and rituals.",
-			"category": "Magic relics",
-			"price": "600 gold",
-			"stock": "1"
-		},
-		{
-			"name": "Gauntlets of Power",
-			"description": "Gauntlets that enhance the wearer’s physical power.",
-			"category": "Magic relics",
-			"price": "310 gold",
-			"stock": "5"
-		},
-		{
-			"name": "Necklace of Water Walking",
-			"description": "A necklace that allows the wearer to walk on water.",
-			"category": "Magic relics",
-			"price": "270 gold",
-			"stock": "6"
-		},
-		{
-			"name": "Horn of Summoning",
-			"description": "A horn that summons a mystical creature to aid the user.",
-			"category": "Magic relics",
-			"price": "380 gold",
-			"stock": "2"
-		},
-		{
-			"name": "Rune Stone",
-			"description": "A stone inscribed with runes that enhance magical spells.",
-			"category": "Magic relics",
-			"price": "210 gold",
-			"stock": "8"
-		},
-		{
-			"name": "Tiara of the Moon",
-			"description": "A tiara that grants the wearer night vision.",
-			"category": "Magic relics",
-			"price": "230 gold",
-			"stock": "7"
-		}
-	],
-	[
-		{
-			"name": "Enchanted Sword",
-			"description": "A sword that glows with a magical aura.",
-			"category": "Equipment",
-			"price": "150 gold",
-			"stock": "12"
-		},
-		{
-			"name": "Dragon Bow",
-			"description": "A bow made from dragon bones, highly durable.",
-			"category": "Equipment",
-			"price": "200 gold",
-			"stock": "7"
-		},
-		{
-			"name": "Mystic Dagger",
-			"description": "A dagger imbued with dark magic.",
-			"category": "Equipment",
-			"price": "100 gold",
-			"stock": "20"
-		},
-		{
-			"name": "Fire Staff",
-			"description": "A staff that shoots fireballs.",
-			"category": "Equipment",
-			"price": "175 gold",
-			"stock": "5"
-		},
-		{
-			"name": "Ice Wand",
-			"description": "A wand that can freeze enemies.",
-			"category": "Equipment",
-			"price": "160 gold",
-			"stock": "8"
-		},
-		{
-			"name": "Thunder Hammer",
-			"description": "A hammer that strikes with the power of thunder.",
-			"category": "Equipment",
-			"price": "300 gold",
-			"stock": "3"
-		},
-		{
-			"name": "Poison Arrow",
-			"description": "Arrows dipped in deadly poison.",
-			"category": "Equipment",
-			"price": "2 gold each",
-			"stock": "50"
-		},
-		{
-			"name": "Crystal Spear",
-			"description": "A spear made from pure crystal.",
-			"category": "Equipment",
-			"price": "220 gold",
-			"stock": "10"
-		},
-		{
-			"name": "Shadow Axe",
-			"description": "An axe that drains the life of its victims.",
-			"category": "Equipment",
-			"price": "180 gold",
-			"stock": "6"
-		},
-		{
-			"name": "Light Shield",
-			"description": "A shield that protects against dark magic.",
-			"category": "Equipment",
-			"price": "140 gold",
-			"stock": "15"
-		},
-		{
-			"name": "Warrior’s Helm",
-			"description": "A helmet that enhances the wearer’s strength.",
-			"category": "Equipment",
-			"price": "130 gold",
-			"stock": "9"
-		},
-		{
-			"name": "Mage’s Robe",
-			"description": "A robe that increases magical abilities.",
-			"category": "Equipment",
-			"price": "120 gold",
-			"stock": "11"
-		},
-		{
-			"name": "Silent Boots",
-			"description": "Boots that make the wearer silent.",
-			"category": "Equipment",
-			"price": "100 gold",
-			"stock": "7"
-		},
-		{
-			"name": "Invisibility Cloak",
-			"description": "A cloak that renders the wearer invisible.",
-			"category": "Equipment",
-			"price": "500 gold",
-			"stock": "1"
-		},
-		{
-			"name": "Phoenix Feather",
-			"description": "A feather that can revive the wearer once.",
-			"category": "Equipment",
-			"price": "300 gold",
-			"stock": "2"
-		},
-		{
-			"name": "Guardian Amulet",
-			"description": "An amulet that protects against curses.",
-			"category": "Equipment",
-			"price": "150 gold",
-			"stock": "8"
-		},
-		{
-			"name": "Vampire Fang",
-			"description": "A fang that grants the wearer vampiric abilities.",
-			"category": "Equipment",
-			"price": "220 gold",
-			"stock": "4"
-		},
-		{
-			"name": "Dragon Scale Armor",
-			"description": "Armor made from dragon scales.",
-			"category": "Equipment",
-			"price": "400 gold",
-			"stock": "3"
-		},
-		{
-			"name": "Elven Bow",
-			"description": "A finely crafted bow from Elven woods.",
-			"category": "Equipment",
-			"price": "180 gold",
-			"stock": "10"
-		},
-		{
-			"name": "Dwarven Warhammer",
-			"description": "A warhammer forged by dwarves.",
-			"category": "Equipment",
-			"price": "250 gold",
-			"stock": "5"
-		}
-	],
-	[
-		{
-			"name": "Healing Potion",
-			"description": "A potion that heals wounds instantly.",
-			"category": "Potions",
-			"price": "50 gold",
-			"stock": "30"
-		},
-		{
-			"name": "Mana Elixir",
-			"description": "An elixir that restores magical energy.",
-			"category": "Potions",
-			"price": "60 gold",
-			"stock": "25"
-		},
-		{
-			"name": "Invisibility Potion",
-			"description": "A potion that makes the drinker invisible.",
-			"category": "Potions",
-			"price": "100 gold",
-			"stock": "10"
-		},
-		{
-			"name": "Strength Tonic",
-			"description": "A tonic that increases physical strength.",
-			"category": "Potions",
-			"price": "70 gold",
-			"stock": "20"
-		},
-		{
-			"name": "Speed Brew",
-			"description": "A brew that enhances speed.",
-			"category": "Potions",
-			"price": "80 gold",
-			"stock": "15"
-		},
-		{
-			"name": "Fire Resistance Potion",
-			"description": "A potion that grants resistance to fire.",
-			"category": "Potions",
-			"price": "90 gold",
-			"stock": "12"
-		},
-		{
-			"name": "Water Breathing Elixir",
-			"description": "An elixir that allows the drinker to breathe underwater.",
-			"category": "Potions",
-			"price": "85 gold",
-			"stock": "18"
-		},
-		{
-			"name": "Antidote",
-			"description": "A potion that cures poison.",
-			"category": "Potions",
-			"price": "40 gold",
-			"stock": "35"
-		},
-		{
-			"name": "Luck Potion",
-			"description": "A potion that increases luck.",
-			"category": "Potions",
-			"price": "75 gold",
-			"stock": "10"
-		},
-		{
-			"name": "Night Vision Brew",
-			"description": "A brew that grants night vision.",
-			"category": "Potions",
-			"price": "65 gold",
-			"stock": "22"
-		},
-		{
-			"name": "Regeneration Elixir",
-			"description": "An elixir that enhances healing.",
-			"category": "Potions",
-			"price": "95 gold",
-			"stock": "14"
-		},
-		{
-			"name": "Mind Clarity Tonic",
-			"description": "A tonic that clears the mind.",
-			"category": "Potions",
-			"price": "55 gold",
-			"stock": "16"
-		},
-		{
-			"name": "Dragon Blood",
-			"description": "A potion that grants dragon-like strength.",
-			"category": "Potions",
-			"price": "150 gold",
-			"stock": "8"
-		},
-		{
-			"name": "Spirit Brew",
-			"description": "A brew that connects the drinker to the spirit world.",
-			"category": "Potions",
-			"price": "110 gold",
-			"stock": "9"
-		},
-		{
-			"name": "Giant’s Tonic",
-			"description": "A tonic that increases the drinker’s size temporarily.",
-			"category": "Potions",
-			"price": "120 gold",
-			"stock": "5"
-		},
-		{
-			"name": "Stone Skin Potion",
-			"description": "A potion that turns the skin to stone.",
-			"category": "Potions",
-			"price": "90 gold",
-			"stock": "11"
-		},
-		{
-			"name": "Elixir of Wisdom",
-			"description": "An elixir that enhances wisdom.",
-			"category": "Potions",
-			"price": "130 gold",
-			"stock": "7"
-		},
-		{
-			"name": "Youth Tonic",
-			"description": "A tonic that makes the drinker appear younger.",
-			"category": "Potions",
-			"price": "140 gold",
-			"stock": "6"
-		},
-		{
-			"name": "Shadow Potion",
-			"description": "A potion that allows the drinker to blend with shadows.",
-			"category": "Potions",
-			"price": "100 gold",
-			"stock": "9"
-		},
-		{
-			"name": "Phoenix Elixir",
-			"description": "An elixir that grants a single use of phoenix resurrection.",
-			"category": "Potions",
-			"price": "200 gold",
-			"stock": "3"
-		},
-		{
-			"name": "Truth Serum",
-			"description": "A serum that compels the drinker to speak the truth.",
-			"category": "Potions",
-			"price": "85 gold",
-			"stock": "20"
-		},
-		{
-			"name": "Energy Drink",
-			"description": "A drink that replenishes energy quickly.",
-			"category": "Potions",
-			"price": "50 gold",
-			"stock": "28"
-		}
-	]
+	{
+		"name": "Amulet of Protection",
+		"description": "An amulet that provides a shield against physical attacks.",
+		"category": "Magic relics",
+		"price": "200 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Ring of Invisibility",
+		"description": "A ring that grants temporary invisibility.",
+		"category": "Magic relics",
+		"price": "250 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Crystal Ball",
+		"description": "A ball used for scrying and seeing distant places.",
+		"category": "Magic relics",
+		"price": "300 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Phoenix Feather Charm",
+		"description": "A charm that grants one resurrection.",
+		"category": "Magic relics",
+		"price": "400 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Staff of Wisdom",
+		"description": "A staff that enhances the wielder’s wisdom.",
+		"category": "Magic relics",
+		"price": "350 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Orb of Time",
+		"description": "An orb that allows brief glimpses into the future.",
+		"category": "Magic relics",
+		"price": "500 gold",
+		"stock": "2"
+	},
+	{
+		"name": "Mirror of Truth",
+		"description": "A mirror that reveals the true nature of anyone who looks into it.",
+		"category": "Magic relics",
+		"price": "450 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Boots of Swiftness",
+		"description": "Boots that increase the wearer’s speed.",
+		"category": "Magic relics",
+		"price": "220 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Cloak of Shadows",
+		"description": "A cloak that grants the ability to blend into shadows.",
+		"category": "Magic relics",
+		"price": "280 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Pendant of Healing",
+		"description": "A pendant that heals minor wounds over time.",
+		"category": "Magic relics",
+		"price": "260 gold",
+		"stock": "9"
+	},
+	{
+		"name": "Elven Ear Cuffs",
+		"description": "Cuffs that enhance hearing and detect whispers.",
+		"category": "Magic relics",
+		"price": "150 gold",
+		"stock": "12"
+	},
+	{
+		"name": "Dragon Scale Ring",
+		"description": "A ring made from dragon scales, granting immense strength.",
+		"category": "Magic relics",
+		"price": "370 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Gem of Telepathy",
+		"description": "A gem that allows telepathic communication.",
+		"category": "Magic relics",
+		"price": "320 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Wizard’s Hat",
+		"description": "A hat that boosts magical abilities.",
+		"category": "Magic relics",
+		"price": "200 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Tome of Ancient Knowledge",
+		"description": "A book that contains forgotten spells and rituals.",
+		"category": "Magic relics",
+		"price": "600 gold",
+		"stock": "1"
+	},
+	{
+		"name": "Gauntlets of Power",
+		"description": "Gauntlets that enhance the wearer’s physical power.",
+		"category": "Magic relics",
+		"price": "310 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Necklace of Water Walking",
+		"description": "A necklace that allows the wearer to walk on water.",
+		"category": "Magic relics",
+		"price": "270 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Horn of Summoning",
+		"description": "A horn that summons a mystical creature to aid the user.",
+		"category": "Magic relics",
+		"price": "380 gold",
+		"stock": "2"
+	},
+	{
+		"name": "Rune Stone",
+		"description": "A stone inscribed with runes that enhance magical spells.",
+		"category": "Magic relics",
+		"price": "210 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Tiara of the Moon",
+		"description": "A tiara that grants the wearer night vision.",
+		"category": "Magic relics",
+		"price": "230 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Enchanted Sword",
+		"description": "A sword that glows with a magical aura.",
+		"category": "Equipment",
+		"price": "150 gold",
+		"stock": "12"
+	},
+	{
+		"name": "Dragon Bow",
+		"description": "A bow made from dragon bones, highly durable.",
+		"category": "Equipment",
+		"price": "200 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Mystic Dagger",
+		"description": "A dagger imbued with dark magic.",
+		"category": "Equipment",
+		"price": "100 gold",
+		"stock": "20"
+	},
+	{
+		"name": "Fire Staff",
+		"description": "A staff that shoots fireballs.",
+		"category": "Equipment",
+		"price": "175 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Ice Wand",
+		"description": "A wand that can freeze enemies.",
+		"category": "Equipment",
+		"price": "160 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Thunder Hammer",
+		"description": "A hammer that strikes with the power of thunder.",
+		"category": "Equipment",
+		"price": "300 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Poison Arrow",
+		"description": "Arrows dipped in deadly poison.",
+		"category": "Equipment",
+		"price": "2 gold each",
+		"stock": "50"
+	},
+	{
+		"name": "Crystal Spear",
+		"description": "A spear made from pure crystal.",
+		"category": "Equipment",
+		"price": "220 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Shadow Axe",
+		"description": "An axe that drains the life of its victims.",
+		"category": "Equipment",
+		"price": "180 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Light Shield",
+		"description": "A shield that protects against dark magic.",
+		"category": "Equipment",
+		"price": "140 gold",
+		"stock": "15"
+	},
+	{
+		"name": "Warrior’s Helm",
+		"description": "A helmet that enhances the wearer’s strength.",
+		"category": "Equipment",
+		"price": "130 gold",
+		"stock": "9"
+	},
+	{
+		"name": "Mage’s Robe",
+		"description": "A robe that increases magical abilities.",
+		"category": "Equipment",
+		"price": "120 gold",
+		"stock": "11"
+	},
+	{
+		"name": "Silent Boots",
+		"description": "Boots that make the wearer silent.",
+		"category": "Equipment",
+		"price": "100 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Invisibility Cloak",
+		"description": "A cloak that renders the wearer invisible.",
+		"category": "Equipment",
+		"price": "500 gold",
+		"stock": "1"
+	},
+	{
+		"name": "Phoenix Feather",
+		"description": "A feather that can revive the wearer once.",
+		"category": "Equipment",
+		"price": "300 gold",
+		"stock": "2"
+	},
+	{
+		"name": "Guardian Amulet",
+		"description": "An amulet that protects against curses.",
+		"category": "Equipment",
+		"price": "150 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Vampire Fang",
+		"description": "A fang that grants the wearer vampiric abilities.",
+		"category": "Equipment",
+		"price": "220 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Dragon Scale Armor",
+		"description": "Armor made from dragon scales.",
+		"category": "Equipment",
+		"price": "400 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Elven Bow",
+		"description": "A finely crafted bow from Elven woods.",
+		"category": "Equipment",
+		"price": "180 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Dwarven Warhammer",
+		"description": "A warhammer forged by dwarves.",
+		"category": "Equipment",
+		"price": "250 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Healing Potion",
+		"description": "A potion that heals wounds instantly.",
+		"category": "Potions",
+		"price": "50 gold",
+		"stock": "30"
+	},
+	{
+		"name": "Mana Elixir",
+		"description": "An elixir that restores magical energy.",
+		"category": "Potions",
+		"price": "60 gold",
+		"stock": "25"
+	},
+	{
+		"name": "Invisibility Potion",
+		"description": "A potion that makes the drinker invisible.",
+		"category": "Potions",
+		"price": "100 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Strength Tonic",
+		"description": "A tonic that increases physical strength.",
+		"category": "Potions",
+		"price": "70 gold",
+		"stock": "20"
+	},
+	{
+		"name": "Speed Brew",
+		"description": "A brew that enhances speed.",
+		"category": "Potions",
+		"price": "80 gold",
+		"stock": "15"
+	},
+	{
+		"name": "Fire Resistance Potion",
+		"description": "A potion that grants resistance to fire.",
+		"category": "Potions",
+		"price": "90 gold",
+		"stock": "12"
+	},
+	{
+		"name": "Water Breathing Elixir",
+		"description": "An elixir that allows the drinker to breathe underwater.",
+		"category": "Potions",
+		"price": "85 gold",
+		"stock": "18"
+	},
+	{
+		"name": "Antidote",
+		"description": "A potion that cures poison.",
+		"category": "Potions",
+		"price": "40 gold",
+		"stock": "35"
+	},
+	{
+		"name": "Luck Potion",
+		"description": "A potion that increases luck.",
+		"category": "Potions",
+		"price": "75 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Night Vision Brew",
+		"description": "A brew that grants night vision.",
+		"category": "Potions",
+		"price": "65 gold",
+		"stock": "22"
+	},
+	{
+		"name": "Regeneration Elixir",
+		"description": "An elixir that enhances healing.",
+		"category": "Potions",
+		"price": "95 gold",
+		"stock": "14"
+	},
+	{
+		"name": "Mind Clarity Tonic",
+		"description": "A tonic that clears the mind.",
+		"category": "Potions",
+		"price": "55 gold",
+		"stock": "16"
+	},
+	{
+		"name": "Dragon Blood",
+		"description": "A potion that grants dragon-like strength.",
+		"category": "Potions",
+		"price": "150 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Spirit Brew",
+		"description": "A brew that connects the drinker to the spirit world.",
+		"category": "Potions",
+		"price": "110 gold",
+		"stock": "9"
+	},
+	{
+		"name": "Giant’s Tonic",
+		"description": "A tonic that increases the drinker’s size temporarily.",
+		"category": "Potions",
+		"price": "120 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Stone Skin Potion",
+		"description": "A potion that turns the skin to stone.",
+		"category": "Potions",
+		"price": "90 gold",
+		"stock": "11"
+	},
+	{
+		"name": "Elixir of Wisdom",
+		"description": "An elixir that enhances wisdom.",
+		"category": "Potions",
+		"price": "130 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Youth Tonic",
+		"description": "A tonic that makes the drinker appear younger.",
+		"category": "Potions",
+		"price": "140 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Shadow Potion",
+		"description": "A potion that allows the drinker to blend with shadows.",
+		"category": "Potions",
+		"price": "100 gold",
+		"stock": "9"
+	},
+	{
+		"name": "Phoenix Elixir",
+		"description": "An elixir that grants a single use of phoenix resurrection.",
+		"category": "Potions",
+		"price": "200 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Truth Serum",
+		"description": "A serum that compels the drinker to speak the truth.",
+		"category": "Potions",
+		"price": "85 gold",
+		"stock": "20"
+	},
+	{
+		"name": "Energy Drink",
+		"description": "A drink that replenishes energy quickly.",
+		"category": "Potions",
+		"price": "50 gold",
+		"stock": "28"
+	}
 ]
