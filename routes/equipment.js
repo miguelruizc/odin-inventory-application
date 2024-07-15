@@ -52,8 +52,21 @@ router.post('/add', async (req, res) => {
 	}
 	// Add data if no errors
 	else {
-		console.log('TODO: Add data to DB here');
-		console.log('Data: ', req.body);
+		const newItem = new Item({
+			name,
+			description,
+			price,
+			category,
+			stock,
+		});
+		newItem
+			.save()
+			.then((savedDoc) => {
+				console.log('Document saved successfully:');
+				console.log(savedDoc);
+			})
+			.catch((err) => console.log(err));
+
 		res.redirect('/equipment');
 	}
 });
