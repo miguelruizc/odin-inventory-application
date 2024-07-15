@@ -31,8 +31,8 @@ router.get('/:id', async (req, res) => {
 
 router.post('/add', async (req, res) => {
 	// Validate data
-	const name = req.body.name;
-	const description = req.body.description;
+	const name = req.body.name.trim();
+	const description = req.body.description.trim();
 	const price = parseInt(req.body.price);
 	const category = req.body.category;
 	const stock = parseInt(req.body.stock);
@@ -82,8 +82,8 @@ router.get('/update/:id', async (req, res) => {
 router.put('/update/:id', async (req, res) => {
 	// Validate data
 	const id = req.params.id;
-	const name = req.body.name;
-	const description = req.body.description;
+	const name = req.body.name.trim();
+	const description = req.body.description.trim();
 	const price = req.body.price;
 	const category = req.body.category;
 	const stock = req.body.stock;

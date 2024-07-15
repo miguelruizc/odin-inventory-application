@@ -5,12 +5,22 @@
 		<%- include('partials/nav') %>
 		<h1><%= title %></h1>
 		<main>
-			<form action="/categories/add" method="POST">
+			<form action="" method="POST">
+				<input type="hidden" name="_method" value="PUT" />
+
 				<label for="name">Category name: </label>
-				<input type="text" name="name" minlength="3" required />
+				<input
+					type="text"
+					name="name"
+					minlength="3"
+					value="<%= category.name %>"
+					required
+				/>
 
 				<label for="description">Category description: </label>
-				<textarea name="description" minlength="10" required></textarea>
+				<textarea name="description" minlength="10" required>
+<%= category.description %></textarea
+				>
 
 				<button type="submit">Submit</button>
 

@@ -1,5 +1,3 @@
--Update pages
-    -Update category
 -Delete pages
     -Delete item
     -Delete category

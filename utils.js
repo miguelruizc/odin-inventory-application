@@ -12,10 +12,10 @@ const hiddenMethodsHandler = (req, res, next) => {
 const validateItemDataAsync = async (name, description, price, category, stock) => {
 	let errors = [];
 
-	if (!name || name.trim() === '') errors.push('Name field is required');
+	if (!name) errors.push('Name field is required');
 	else if (name.length < 3) errors.push('Name must be at least 3 characters long');
 
-	if (!description || description.trim() === '') errors.push('Description field is required');
+	if (!description) errors.push('Description field is required');
 	else if (description.length < 10)
 		errors.push('Description must be at least 10 characters long');
 

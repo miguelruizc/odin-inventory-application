@@ -25,8 +25,8 @@ router.get('/add', async (req, res) => {
 
 router.post('/add', async (req, res) => {
 	// Validate data
-	const name = req.body.name;
-	const description = req.body.description;
+	const name = req.body.name.trim();
+	const description = req.body.description.trim();
 	const price = parseInt(req.body.price);
 	const category = req.body.category;
 	const stock = parseInt(req.body.stock);
