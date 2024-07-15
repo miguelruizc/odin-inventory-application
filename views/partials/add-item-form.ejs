@@ -1,0 +1,43 @@
+<form action="/all/add" method="POST">
+    
+    <label for="name">Name: </label>
+    <input type="text" name="name" placeholder="Item name..." required>
+    <br>
+
+    <label for="description">Description: </label>
+    <textarea name="description" placeholder="Item description..." required></textarea>
+    <br>
+
+    <label for="price">Price: </label>
+    <input type="number" name="price" placeholder="Item price in gold..." min="1" max="99999" required>
+    <br>
+
+    <label for="category">Category: </label>
+    <select name="category" required>
+        <% categories.forEach(category => {%>
+            <option 
+                value="<%= category.name %>"
+                <% if(category.name === preselected) { %> selected <% } %>  
+            >
+            <%= category.name %>
+            </option>
+        <% }); %>
+    </select>
+    <br>
+
+    <label for="stock">Stock: </label>
+    <input type="number" name="stock" placeholder="How many in stock..." min="1" max="99999" required>
+
+    <button type="submit">Submit</button>
+
+    
+    <% if(errors) {%>
+        <ul>
+        <% errors.forEach(error => { %>
+            <li><%= error %> </li>
+        <% }); %>
+        </ul>
+    <% } %>
+
+
+</form>

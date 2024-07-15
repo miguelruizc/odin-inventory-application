@@ -4,8 +4,6 @@
 	<body>
 		<%- include('partials/nav') %>
 		<h1><%= title %></h1>
-		<main>
-			<form action="">-Add item form</form>
-		</main>
+		<main><%- include('partials/add-item-form', {categories, preselected, errors}) %></main>
 	</body>
 </html>
