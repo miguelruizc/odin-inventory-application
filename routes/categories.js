@@ -67,8 +67,18 @@ router.post('/add', (req, res) => {
 	if (errors.length > 0) {
 		res.render('categories-add', { title: 'Add category', errors });
 	} else {
-		console.log('TODO: Add data to DB here');
-		console.log('Data: ', req.body);
+		const newCategory = new Category({
+			name,
+			description,
+		});
+		newCategory
+			.save()
+			.then((savedDoc) => {
+				console.log('Document saved successfully:');
+				console.log(savedDoc);
+			})
+			.catch((err) => console.log(err));
+
 		res.redirect('/categories');
 	}
 });
