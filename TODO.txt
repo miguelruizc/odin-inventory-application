@@ -1,5 +1,7 @@
 -Insert forms
     -Insert category
     -Insert item (pass category if clicked from equipment/potions/magic-relics)
+-Order data by added time, so that last added show first
 -Update pages
 -Delete pages
+-Add Other section (for custom categories)

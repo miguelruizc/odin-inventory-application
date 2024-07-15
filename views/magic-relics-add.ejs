@@ -5,7 +5,7 @@
 		<%- include('partials/nav') %>
 		<h1><%= title %></h1>
 		<main>
-			<form action="">-Add magic-relic form</form>
+			<%- include('partials/add-item-form', {categories, preselected, errors, formPath}) %>
 		</main>
 	</body>
 </html>

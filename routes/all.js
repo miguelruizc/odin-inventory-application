@@ -18,6 +18,7 @@ router.get('/add', async (req, res) => {
 		categories,
 		preselected: null,
 		errors: null,
+		formPath: '/all/add',
 	});
 });
 
@@ -65,6 +66,7 @@ router.post('/add', (req, res) => {
 					categories,
 					preselected: null,
 					errors,
+					formPath: '/all/add',
 				});
 			})
 			.catch((error) => console.log(error));
@@ -72,6 +74,7 @@ router.post('/add', (req, res) => {
 	// Add data if no errors
 	else {
 		console.log('TODO: Add data to DB here');
+		console.log('Data: ', req.body);
 		res.redirect('/all');
 	}
 });
