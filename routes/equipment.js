@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Item = require('../models/Item');
 const Category = require('../models/Category');
+const { validateItemDataAsync } = require('../utils');
 
 router.get('/', async (req, res) => {
 	const items = await Item.find({ category: 'Equipment' });
@@ -30,27 +31,7 @@ router.post('/add', async (req, res) => {
 	const category = req.body.category;
 	const stock = parseInt(req.body.stock);
 
-	let errors = [];
-	if (!name || name.trim() === '') errors.push('Name field is required');
-	else if (name.length < 3) errors.push('Name must be at least 3 characters long');
-
-	if (!description || description.trim() === '') errors.push('Description field is required');
-	else if (description.length < 10)
-		errors.push('Description must be at least 10 characters long');
-
-	if (!price) errors.push('Price field is required');
-	else if (price < 0 || price > 99999)
-		errors.push('Price must be bigger than 0 and smaller than 100000');
-
-	if (!category) errors.push('Category field is required');
-	else {
-		const categoryExists = await Category.exists({ name: category });
-		if (!categoryExists) errors.push('Invalid category, chose a category from the menu');
-	}
-
-	if (!stock) errors.push('Stock field is required');
-	else if (stock < 0 || stock > 99999)
-		errors.push('Stock must be bigger than 0 and smaller than 100000');
+	const errors = await validateItemDataAsync(name, description, price, category, stock);
 
 	// Redirect to form if errors
 	if (errors.length > 0) {
