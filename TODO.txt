@@ -1,13 +1,12 @@
 -Update pages
-    -Update item   
     -Update category
 -Delete pages
     -Delete item
     -Delete category
 
--on create forms, handle validation for non-existant categories
 -Add correct status codes on renders
 -Implement database entry from create forms
+-Implement database update from update forms
 -Order data by added time, so that last added show first
 -Add Other section (for custom added categories)
 -Add validation to categories-creation to check if category already exists

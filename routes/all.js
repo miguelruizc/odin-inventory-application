@@ -79,7 +79,7 @@ router.get('/update/:id', async (req, res) => {
 	else console.log('Error: no item match id');
 });
 
-router.put('/update/:id', (req, res) => {
+router.put('/update/:id', async (req, res) => {
 	// Validate data
 	const id = req.params.id;
 	const name = req.body.name;
@@ -88,7 +88,32 @@ router.put('/update/:id', (req, res) => {
 	const category = req.body.category;
 	const stock = req.body.stock;
 
-	// Validate data function async
+	const errors = await validateItemDataAsync(name, description, price, category, stock);
+
+	// Redirect to form if errors
+	if (errors.length > 0) {
+		let categories;
+		const item = await Item.findById(id);
+		Category.find({})
+			.then((data) => {
+				categories = data;
+
+				res.render('all-update.ejs', {
+					title: 'Update item',
+					item,
+					categories,
+					preselected: item.category,
+					errors,
+				});
+			})
+			.catch((error) => console.log(error));
+	}
+	// Add data if no errors
+	else {
+		console.log('TODO: Add data to DB here');
+		console.log('Data: ', req.body);
+		res.redirect('/all');
+	}
 });
 
 module.exports = router;
