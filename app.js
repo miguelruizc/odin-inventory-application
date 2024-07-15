@@ -6,6 +6,7 @@ const categoriesRouter = require('./routes/categories.js');
 const equipmentRouter = require('./routes/equipment.js');
 const magicRelicsRouter = require('./routes/magic-relics.js');
 const potionsRouter = require('./routes/potions.js');
+const otherRouter = require('./routes/other.js');
 const { hiddenMethodsHandler } = require('./utils.js');
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/equipment', equipmentRouter);
 app.use('/magic-relics', magicRelicsRouter);
 app.use('/potions', potionsRouter);
 app.use('/all', allRouter);
+app.use('/other', otherRouter);
 app.use('/', (req, res, next) => {
 	if (req.url === '/') res.redirect('/all');
 	else next();

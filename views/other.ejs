@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('partials/header', {title}) %>
+	<body>
+		<%- include('partials/nav') %>
+		<h1><%= title %></h1>
+		<main>
+			<a href="/all/add">Add item</a>
+			<hr />
+			<% items.forEach(item => { %>
+			<div class="itemCard">
+				<h2><a href="<%= item.url %>"><%= item.name %></a></h2>
+				<p>Description: <%= item.description %></p>
+				<p>Category: <%= item.category %></p>
+				<p>Stock: <%= item.stock %></p>
+				<p>Price: <%= item.formattedPrice %></p>
+			</div>
+			<% }) %>
+		</main>
+	</body>
+</html>
