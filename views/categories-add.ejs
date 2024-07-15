@@ -5,7 +5,20 @@
 		<%- include('partials/nav') %>
 		<h1><%= title %></h1>
 		<main>
-			<form action="">-Add category form</form>
+			<form action="/categories/add" method="POST">
+				<label for="category">Category name: </label>
+				<input type="text" name="category" required />
+
+				<button type="submit">Submit</button>
+
+				<% if(errors) {%>
+				<ul>
+					<% errors.forEach(error => { %>
+					<li><%= error %></li>
+					<% }); %>
+				</ul>
+				<% } %>
+			</form>
 		</main>
 	</body>
 </html>
