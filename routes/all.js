@@ -34,8 +34,10 @@ router.get('/delete/:id', async (req, res) => {
 router.delete('/delete/:id', async (req, res) => {
 	const id = req.params.id;
 
-	console.log('TODO: Delete data to DB here');
-	console.log('Data: ', id);
+	const deletedItem = await Item.findByIdAndDelete(id);
+	console.log('Item successfully deleted: ');
+	console.log(deletedItem);
+
 	res.redirect('/all');
 });
 
