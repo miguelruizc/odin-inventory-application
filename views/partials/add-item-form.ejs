@@ -1,11 +1,11 @@
 <form action="<%= formPath %>" method="POST">
 
     <label for="name">Name: </label>
-    <input type="text" name="name" placeholder="Item name..." required>
+    <input type="text" name="name" placeholder="Item name..." minlength="3" required>
     <br>
 
     <label for="description">Description: </label>
-    <textarea name="description" placeholder="Item description..." required></textarea>
+    <textarea name="description" placeholder="Item description..." minlength="10"></textarea>
     <br>
 
     <label for="price">Price: </label>
