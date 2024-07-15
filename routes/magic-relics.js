@@ -22,7 +22,7 @@ router.get('/add', async (req, res) => {
 	});
 });
 
-router.post('/add', (req, res) => {
+router.post('/add', async (req, res) => {
 	// Validate data
 	const name = req.body.name;
 	const description = req.body.description;
@@ -43,6 +43,10 @@ router.post('/add', (req, res) => {
 		errors.push('Price must be bigger than 0 and smaller than 100000');
 
 	if (!category) errors.push('Category field is required');
+	else {
+		const categoryExists = await Category.exists({ name: category });
+		if (!categoryExists) errors.push('Invalid category, chose a category from the menu');
+	}
 
 	if (!stock) errors.push('Stock field is required');
 	else if (stock < 0 || stock > 99999)

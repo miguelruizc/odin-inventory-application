@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
 	else console.log('Error: no item match id');
 });
 
-router.post('/add', (req, res) => {
+router.post('/add', async (req, res) => {
 	// Validate data
 	const name = req.body.name;
 	const description = req.body.description;
@@ -49,6 +49,10 @@ router.post('/add', (req, res) => {
 		errors.push('Price must be bigger than 0 and smaller than 100000');
 
 	if (!category) errors.push('Category field is required');
+	else {
+		const categoryExists = await Category.exists({ name: category });
+		if (!categoryExists) errors.push('Invalid category, chose a category from the menu');
+	}
 
 	if (!stock) errors.push('Stock field is required');
 	else if (stock < 0 || stock > 99999)
@@ -77,6 +81,31 @@ router.post('/add', (req, res) => {
 		console.log('Data: ', req.body);
 		res.redirect('/all');
 	}
+});
+
+router.get('/update/:id', async (req, res) => {
+	const item = await Item.findById(req.params.id);
+	const categories = await Category.find({});
+
+	if (item)
+		res.render('all-update.ejs', {
+			title: 'Update item',
+			item,
+			categories,
+			preselected: item.category,
+			errors: null,
+		});
+	else console.log('Error: no item match id');
+});
+
+router.put('/update/:id', (req, res) => {
+	// Validate data
+	const id = req.params.id;
+	const name = req.body.name;
+	const description = req.body.description;
+	const price = req.body.price;
+	const category = req.body.category;
+	const stock = req.body.stock;
 });
 
 module.exports = router;

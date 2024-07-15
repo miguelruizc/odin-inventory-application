@@ -6,6 +6,7 @@ const categoriesRouter = require('./routes/categories.js');
 const equipmentRouter = require('./routes/equipment.js');
 const magicRelicsRouter = require('./routes/magic-relics.js');
 const potionsRouter = require('./routes/potions.js');
+const { hiddenMethodsHandler } = require('./utils.js');
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
+app.use(hiddenMethodsHandler);
 
 app.use('/categories', categoriesRouter);
 app.use('/equipment', equipmentRouter);

@@ -1,7 +1,13 @@
--Insert forms
-    -Insert category
-    -Insert item (pass category if clicked from equipment/potions/magic-relics)
--Order data by added time, so that last added show first
 -Update pages
+    -Update item   
+    -Update category
 -Delete pages
--Add Other section (for custom categories)
+    -Delete item
+    -Delete category
+
+-on create forms, handle validation for non-existant categories
+-Add correct status codes on renders
+-Implement database entry from create forms
+-Order data by added time, so that last added show first
+-Add Other section (for custom added categories)
+-Add validation to categories-creation to check if category already exists
