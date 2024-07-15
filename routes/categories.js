@@ -52,7 +52,7 @@ router.get('/:id', async (req, res) => {
 	else console.log('Error: no category match id');
 });
 
-router.post('/add', (req, res) => {
+router.post('/add', async (req, res) => {
 	// Validate data
 	const name = req.body.name.trim();
 	const description = req.body.description.trim();
@@ -60,6 +60,8 @@ router.post('/add', (req, res) => {
 	let errors = [];
 	if (!name) errors.push('Name field is required');
 	else if (name.length < 3) errors.push('Name must be at least 3 characters long');
+	else if (await Category.exists({ name: name }))
+		errors.push('Category with this name already exists');
 
 	if (!description) errors.push('Description field is required');
 	else if (description.length < 10)
@@ -73,7 +75,7 @@ router.post('/add', (req, res) => {
 			name,
 			description,
 		});
-		newCategory
+		await newCategory
 			.save()
 			.then((savedDoc) => {
 				console.log('Document saved successfully:');

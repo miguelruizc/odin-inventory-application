@@ -1,4 +1,2 @@
 -Order data by updated time, so that last added show first
--Add Other section (for custom added categories)
--Add validation to categories-creation to check if category already exists
 -Add correct status codes on renders
