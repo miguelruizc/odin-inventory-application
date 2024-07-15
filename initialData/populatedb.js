@@ -6,12 +6,19 @@ const Item = require('../models/Item');
 
 mongoose
 	.connect(process.env.MONGODB_URI, {})
-	.then((result) => {
+	.then(async (result) => {
 		console.log('Connected to DB');
+
+		// Delete any previous data
+		await Item.deleteMany({})
+			.then(console.log('All Items deleted'))
+			.catch((err) => console.log(err));
+		await Category.deleteMany({})
+			.then(console.log('All Categories deleted'))
+			.catch((err) => console.log(err));
 
 		// Read and add categories
 		const categoriesPath = path.join(__dirname, 'categories.json');
-		console.log(categoriesPath);
 		fs.readFile(categoriesPath)
 			.then((data) => {
 				const categories = JSON.parse(data);
@@ -30,7 +37,6 @@ mongoose
 
 		// Read and add items
 		const itemsPath = path.join(__dirname, 'items.json');
-		console.log(itemsPath);
 		fs.readFile(itemsPath)
 			.then((data) => {
 				const items = JSON.parse(data);

@@ -7,7 +7,9 @@
 		<main>
 			<a href="/magic-relics/add">Add magic relic</a>
 			<hr />
-			<% items.forEach(item => { %>
+			<% if(items.length === 0) { %>
+			<p>No items... Items with magic relics category will show here</p>
+			<% } %> <% items.forEach(item => { %>
 			<div class="itemCard">
 				<h2><a href="<%= item.url %>"><%= item.name %></a></h2>
 				<p>Description: <%= item.description %></p>

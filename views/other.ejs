@@ -7,7 +7,9 @@
 		<main>
 			<a href="/all/add">Add item</a>
 			<hr />
-			<% items.forEach(item => { %>
+			<% if(items.length === 0) { %>
+			<p>No items... Items with custom categories will show here</p>
+			<% } %> <% items.forEach(item => { %>
 			<div class="itemCard">
 				<h2><a href="<%= item.url %>"><%= item.name %></a></h2>
 				<p>Description: <%= item.description %></p>
