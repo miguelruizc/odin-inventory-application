@@ -10,18 +10,24 @@
 				<p>Description: <%= category.description %></p>
 			</div>
 
-			<% if(dependencies) { %>
-			<h2>Dependencies</h2>
+			<% if(category.name === 'Equipment' || category.name === 'Magic relics' || category.name === 'Potions') { %>
+			<h2>Core categories</h2>
 			<p style="color: red">
-				The following items depend on this category, can't delete category while items
-				depend on it
+				Only custom categories can be deleted. "Equipment", "Magic relics" and "Potions"
+				cannot be deleted.
 			</p>
-			<% dependencies.forEach(dependency => {%>
-			<div>
-				<a href="<%= dependency.url %>">
-					<h3><%= dependency.name %></h3>
-				</a>
-			</div>
+			<% } else if(dependencies.length > 0) { %>
+				<h2>Dependencies</h2>
+				<p style="color: red">
+					The following items depend on this category, can't delete category while items
+					depend on it
+				</p>
+				<% dependencies.forEach(dependency => {%>
+				<div>
+					<a href="<%= dependency.url %>">
+						<h3><%= dependency.name %></h3>
+					</a>
+				</div>
 			<% }); } else { %>
 			<h3>Are you sure you want to delete this category?</h3>
 			<form action="/categories/delete/<%= category._id %>" method="POST">

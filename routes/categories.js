@@ -37,9 +37,11 @@ router.delete('/delete/:id', async (req, res) => {
 	const dependencies = await Item.find({ category: category.name });
 
 	// Handle delete if no dependencies
-	if (category && !dependencies) {
-		console.log('TODO: delete data to DB here');
-		console.log('Data: ', id);
+	if (category && dependencies.length === 0) {
+		const deletedCategory = await Category.findByIdAndDelete(id);
+		console.log('Category deleted succesfully: ');
+		console.log(deletedCategory);
+
 		res.redirect('/categories');
 	}
 });
