@@ -59,7 +59,7 @@ router.post('/add', async (req, res) => {
 			category,
 			stock,
 		});
-		newItem
+		await newItem
 			.save()
 			.then((savedDoc) => {
 				console.log('Document saved successfully:');

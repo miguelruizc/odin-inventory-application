@@ -81,7 +81,7 @@ router.post('/add', async (req, res) => {
 			category,
 			stock,
 		});
-		newItem
+		await newItem
 			.save()
 			.then((savedDoc) => {
 				console.log('Document saved successfully:');
@@ -137,10 +137,20 @@ router.put('/update/:id', async (req, res) => {
 			})
 			.catch((error) => console.log(error));
 	}
-	// Add data if no errors
+	// Update data if no errors
 	else {
-		console.log('TODO: Add data to DB here');
-		console.log('Data: ', req.body);
+		const updatedItem = {
+			name,
+			description,
+			price,
+			category,
+			stock,
+		};
+
+		const updatedDoc = await Item.findOneAndUpdate({ _id: id }, updatedItem);
+		console.log('Document sucessfully updated: ');
+		console.log(updatedDoc);
+
 		res.redirect('/all');
 	}
 });
