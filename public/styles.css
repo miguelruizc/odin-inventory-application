@@ -84,6 +84,10 @@ form button {
 	align-self: center;
 }
 
+.confirmButton {
+	align-self: flex-start;
+}
+
 input,
 textarea {
 	font-family: Arial, sans-serif; /* Replace with your desired font stack */
@@ -98,4 +102,35 @@ form {
 
 textarea {
 	resize: vertical;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		flex-direction: column;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 8px;
+	}
+
+	nav ul li {
+		flex: 1 1 auto;
+	}
+
+	nav ul li a {
+		text-align: center;
+		font-size: 0.7rem;
+	}
+
+	nav ul li a:after,
+	nav ul li a:before {
+		content: '·';
+	}
 }

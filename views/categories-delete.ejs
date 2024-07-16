@@ -31,7 +31,7 @@
 			<h3>Are you sure you want to delete this category?</h3>
 			<form action="/categories/delete/<%= category._id %>" method="POST">
 				<input type="hidden" name="_method" value="DELETE" />
-				<button type="submit">CONFIRM</button>
+				<button type="submit" class="confirmButton">CONFIRM</button>
 			</form>
 			<% } %>
 		</main>
