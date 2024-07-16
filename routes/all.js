@@ -5,7 +5,7 @@ const Category = require('../models/Category');
 const { validateItemDataAsync } = require('../utils');
 
 router.get('/', async (req, res) => {
-	const items = await Item.find({});
+	const items = await Item.find({}).sort({ updatedAt: -1 });
 
 	if (items) res.render('all', { title: 'All items', items });
 	else console.log('Error, no items');

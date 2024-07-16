@@ -1,145 +1,5 @@
 [
 	{
-		"name": "Amulet of Protection",
-		"description": "An amulet that provides a shield against physical attacks.",
-		"category": "Magic relics",
-		"price": "200 gold",
-		"stock": "8"
-	},
-	{
-		"name": "Ring of Invisibility",
-		"description": "A ring that grants temporary invisibility.",
-		"category": "Magic relics",
-		"price": "250 gold",
-		"stock": "5"
-	},
-	{
-		"name": "Crystal Ball",
-		"description": "A ball used for scrying and seeing distant places.",
-		"category": "Magic relics",
-		"price": "300 gold",
-		"stock": "4"
-	},
-	{
-		"name": "Phoenix Feather Charm",
-		"description": "A charm that grants one resurrection.",
-		"category": "Magic relics",
-		"price": "400 gold",
-		"stock": "3"
-	},
-	{
-		"name": "Staff of Wisdom",
-		"description": "A staff that enhances the wielder’s wisdom.",
-		"category": "Magic relics",
-		"price": "350 gold",
-		"stock": "6"
-	},
-	{
-		"name": "Orb of Time",
-		"description": "An orb that allows brief glimpses into the future.",
-		"category": "Magic relics",
-		"price": "500 gold",
-		"stock": "2"
-	},
-	{
-		"name": "Mirror of Truth",
-		"description": "A mirror that reveals the true nature of anyone who looks into it.",
-		"category": "Magic relics",
-		"price": "450 gold",
-		"stock": "4"
-	},
-	{
-		"name": "Boots of Swiftness",
-		"description": "Boots that increase the wearer’s speed.",
-		"category": "Magic relics",
-		"price": "220 gold",
-		"stock": "7"
-	},
-	{
-		"name": "Cloak of Shadows",
-		"description": "A cloak that grants the ability to blend into shadows.",
-		"category": "Magic relics",
-		"price": "280 gold",
-		"stock": "5"
-	},
-	{
-		"name": "Pendant of Healing",
-		"description": "A pendant that heals minor wounds over time.",
-		"category": "Magic relics",
-		"price": "260 gold",
-		"stock": "9"
-	},
-	{
-		"name": "Elven Ear Cuffs",
-		"description": "Cuffs that enhance hearing and detect whispers.",
-		"category": "Magic relics",
-		"price": "150 gold",
-		"stock": "12"
-	},
-	{
-		"name": "Dragon Scale Ring",
-		"description": "A ring made from dragon scales, granting immense strength.",
-		"category": "Magic relics",
-		"price": "370 gold",
-		"stock": "4"
-	},
-	{
-		"name": "Gem of Telepathy",
-		"description": "A gem that allows telepathic communication.",
-		"category": "Magic relics",
-		"price": "320 gold",
-		"stock": "3"
-	},
-	{
-		"name": "Wizard’s Hat",
-		"description": "A hat that boosts magical abilities.",
-		"category": "Magic relics",
-		"price": "200 gold",
-		"stock": "10"
-	},
-	{
-		"name": "Tome of Ancient Knowledge",
-		"description": "A book that contains forgotten spells and rituals.",
-		"category": "Magic relics",
-		"price": "600 gold",
-		"stock": "1"
-	},
-	{
-		"name": "Gauntlets of Power",
-		"description": "Gauntlets that enhance the wearer’s physical power.",
-		"category": "Magic relics",
-		"price": "310 gold",
-		"stock": "5"
-	},
-	{
-		"name": "Necklace of Water Walking",
-		"description": "A necklace that allows the wearer to walk on water.",
-		"category": "Magic relics",
-		"price": "270 gold",
-		"stock": "6"
-	},
-	{
-		"name": "Horn of Summoning",
-		"description": "A horn that summons a mystical creature to aid the user.",
-		"category": "Magic relics",
-		"price": "380 gold",
-		"stock": "2"
-	},
-	{
-		"name": "Rune Stone",
-		"description": "A stone inscribed with runes that enhance magical spells.",
-		"category": "Magic relics",
-		"price": "210 gold",
-		"stock": "8"
-	},
-	{
-		"name": "Tiara of the Moon",
-		"description": "A tiara that grants the wearer night vision.",
-		"category": "Magic relics",
-		"price": "230 gold",
-		"stock": "7"
-	},
-	{
 		"name": "Enchanted Sword",
 		"description": "A sword that glows with a magical aura.",
 		"category": "Equipment",
@@ -432,5 +292,145 @@
 		"category": "Potions",
 		"price": "50 gold",
 		"stock": "28"
+	},
+	{
+		"name": "Amulet of Protection",
+		"description": "An amulet that provides a shield against physical attacks.",
+		"category": "Magic relics",
+		"price": "200 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Ring of Invisibility",
+		"description": "A ring that grants temporary invisibility.",
+		"category": "Magic relics",
+		"price": "250 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Crystal Ball",
+		"description": "A ball used for scrying and seeing distant places.",
+		"category": "Magic relics",
+		"price": "300 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Phoenix Feather Charm",
+		"description": "A charm that grants one resurrection.",
+		"category": "Magic relics",
+		"price": "400 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Staff of Wisdom",
+		"description": "A staff that enhances the wielder’s wisdom.",
+		"category": "Magic relics",
+		"price": "350 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Orb of Time",
+		"description": "An orb that allows brief glimpses into the future.",
+		"category": "Magic relics",
+		"price": "500 gold",
+		"stock": "2"
+	},
+	{
+		"name": "Mirror of Truth",
+		"description": "A mirror that reveals the true nature of anyone who looks into it.",
+		"category": "Magic relics",
+		"price": "450 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Boots of Swiftness",
+		"description": "Boots that increase the wearer’s speed.",
+		"category": "Magic relics",
+		"price": "220 gold",
+		"stock": "7"
+	},
+	{
+		"name": "Cloak of Shadows",
+		"description": "A cloak that grants the ability to blend into shadows.",
+		"category": "Magic relics",
+		"price": "280 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Pendant of Healing",
+		"description": "A pendant that heals minor wounds over time.",
+		"category": "Magic relics",
+		"price": "260 gold",
+		"stock": "9"
+	},
+	{
+		"name": "Elven Ear Cuffs",
+		"description": "Cuffs that enhance hearing and detect whispers.",
+		"category": "Magic relics",
+		"price": "150 gold",
+		"stock": "12"
+	},
+	{
+		"name": "Dragon Scale Ring",
+		"description": "A ring made from dragon scales, granting immense strength.",
+		"category": "Magic relics",
+		"price": "370 gold",
+		"stock": "4"
+	},
+	{
+		"name": "Gem of Telepathy",
+		"description": "A gem that allows telepathic communication.",
+		"category": "Magic relics",
+		"price": "320 gold",
+		"stock": "3"
+	},
+	{
+		"name": "Wizard’s Hat",
+		"description": "A hat that boosts magical abilities.",
+		"category": "Magic relics",
+		"price": "200 gold",
+		"stock": "10"
+	},
+	{
+		"name": "Tome of Ancient Knowledge",
+		"description": "A book that contains forgotten spells and rituals.",
+		"category": "Magic relics",
+		"price": "600 gold",
+		"stock": "1"
+	},
+	{
+		"name": "Gauntlets of Power",
+		"description": "Gauntlets that enhance the wearer’s physical power.",
+		"category": "Magic relics",
+		"price": "310 gold",
+		"stock": "5"
+	},
+	{
+		"name": "Necklace of Water Walking",
+		"description": "A necklace that allows the wearer to walk on water.",
+		"category": "Magic relics",
+		"price": "270 gold",
+		"stock": "6"
+	},
+	{
+		"name": "Horn of Summoning",
+		"description": "A horn that summons a mystical creature to aid the user.",
+		"category": "Magic relics",
+		"price": "380 gold",
+		"stock": "2"
+	},
+	{
+		"name": "Rune Stone",
+		"description": "A stone inscribed with runes that enhance magical spells.",
+		"category": "Magic relics",
+		"price": "210 gold",
+		"stock": "8"
+	},
+	{
+		"name": "Tiara of the Moon",
+		"description": "A tiara that grants the wearer night vision.",
+		"category": "Magic relics",
+		"price": "230 gold",
+		"stock": "7"
 	}
 ]

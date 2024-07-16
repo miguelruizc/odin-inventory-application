@@ -4,7 +4,7 @@ const Category = require('../models/Category');
 const Item = require('../models/Item');
 
 router.get('/', async (req, res) => {
-	const categories = await Category.find({});
+	const categories = await Category.find({}).sort({ updatedAt: -1 });
 
 	if (categories) res.render('categories', { title: 'Categories', categories });
 	else console.log('Error, no categories');
