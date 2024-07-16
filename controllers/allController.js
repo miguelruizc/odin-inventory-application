@@ -9,7 +9,7 @@ const GET_all = async (req, res) => {
 	else console.log('Error, no items');
 };
 
-const GET_all_add = async (req, res) => {
+const GET_add = async (req, res) => {
 	const categories = await Category.find({});
 
 	res.render('all-add', {
@@ -21,7 +21,7 @@ const GET_all_add = async (req, res) => {
 	});
 };
 
-const GET_all_delete_id = async (req, res) => {
+const GET_delete_id = async (req, res) => {
 	const id = req.params.id;
 	const item = await Item.findById(id);
 
@@ -29,7 +29,7 @@ const GET_all_delete_id = async (req, res) => {
 	else console.log('Error: no item match id');
 };
 
-const DELETE_all_delete_id = async (req, res) => {
+const DELETE_delete_id = async (req, res) => {
 	const id = req.params.id;
 
 	const deletedItem = await Item.findByIdAndDelete(id);
@@ -39,13 +39,13 @@ const DELETE_all_delete_id = async (req, res) => {
 	res.redirect('/all');
 };
 
-const GET_all_id = async (req, res) => {
+const GET_id = async (req, res) => {
 	const item = await Item.findById(req.params.id);
 	if (item) res.render('all-detail.ejs', { title: 'Details', item });
 	else console.log('Error: no item match id');
 };
 
-const POST_all_add = async (req, res) => {
+const POST_add = async (req, res) => {
 	// Validate data
 	const name = req.body.name.trim();
 	const description = req.body.description.trim();
@@ -93,7 +93,7 @@ const POST_all_add = async (req, res) => {
 	}
 };
 
-const GET_all_update_id = async (req, res) => {
+const GET_update_id = async (req, res) => {
 	const item = await Item.findById(req.params.id);
 	const categories = await Category.find({});
 
@@ -108,7 +108,7 @@ const GET_all_update_id = async (req, res) => {
 	else console.log('Error: no item match id');
 };
 
-const PUT_all_update_id = async (req, res) => {
+const PUT_update_id = async (req, res) => {
 	// Validate data
 	const id = req.params.id;
 	const name = req.body.name.trim();
@@ -157,11 +157,11 @@ const PUT_all_update_id = async (req, res) => {
 
 module.exports = {
 	GET_all,
-	GET_all_add,
-	GET_all_delete_id,
-	DELETE_all_delete_id,
-	GET_all_id,
-	POST_all_add,
-	GET_all_update_id,
-	PUT_all_update_id,
+	GET_add,
+	GET_delete_id,
+	DELETE_delete_id,
+	GET_id,
+	POST_add,
+	GET_update_id,
+	PUT_update_id,
 };
