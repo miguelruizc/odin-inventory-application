@@ -1,32 +1,38 @@
 <form action="<%= formPath %>" method="POST">
 
-    <label for="name">Name: </label>
-    <input type="text" name="name" placeholder="Item name..." minlength="3" required>
-    <br>
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Item name..." minlength="3" required>
+    </div>
 
-    <label for="description">Description: </label>
-    <textarea name="description" placeholder="Item description..." minlength="10" required></textarea>
-    <br>
+    <div>
+        <label for="description">Description: </label>
+        <textarea name="description" placeholder="Item description..." minlength="10" required></textarea>
+    </div>
 
-    <label for="price">Price: </label>
-    <input type="number" name="price" placeholder="Item price in gold..." min="1" max="99999" required>
-    <br>
+    <div>
+        <label for="price">Price: </label>
+        <input type="number" name="price" placeholder="Item price in gold coins..." min="1" max="99999" required>
+    </div>
 
-    <label for="category">Category: </label>
-    <select name="category" required>
-        <% categories.forEach(category => {%>
-            <option 
-                value="<%= category.name %>"
-                <% if(category.name === preselected) { %> selected <% } %>  
-            >
-            <%= category.name %>
-            </option>
-        <% }); %>
-    </select>
-    <br>
+    <div>
+        <label for="category">Category: </label>
+        <select name="category" required>
+            <% categories.forEach(category => {%>
+                <option
+                    value="<%= category.name %>"
+                    <% if(category.name === preselected) { %> selected <% } %>
+                >
+                <%= category.name %>
+                </option>
+            <% }); %>
+        </select>
+    </div>
 
-    <label for="stock">Stock: </label>
-    <input type="number" name="stock" placeholder="How many in stock..." min="1" max="99999" required>
+    <div>
+        <label for="stock">Stock: </label>
+        <input type="number" name="stock" placeholder="How many in stock..." min="1" max="99999" required>
+    </div>
 
     <button type="submit">Submit</button>
 
@@ -34,7 +40,7 @@
     <% if(errors) {%>
         <ul>
         <% errors.forEach(error => { %>
-            <li><%= error %> </li>
+            <li style="color: red">· <%= error %> </li>
         <% }); %>
         </ul>
     <% } %>

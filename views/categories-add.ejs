@@ -3,21 +3,36 @@
 	<%- include('partials/header', {title}) %>
 	<body>
 		<%- include('partials/nav') %>
-		<h1><%= title %></h1>
 		<main>
+			<h1><%= title %></h1>
 			<form action="/categories/add" method="POST">
-				<label for="name">Category name: </label>
-				<input type="text" name="name" minlength="3" required />
+				<div>
+					<label for="name">Name: </label>
+					<input
+						type="text"
+						name="name"
+						minlength="3"
+						placeholder="Category name..."
+						required
+					/>
+				</div>
 
-				<label for="description">Category description: </label>
-				<textarea name="description" minlength="10" required></textarea>
+				<div>
+					<label for="description">Description: </label>
+					<textarea
+						name="description"
+						minlength="10"
+						placeholder="Category description..."
+						required
+					></textarea>
+				</div>
 
 				<button type="submit">Submit</button>
 
 				<% if(errors) {%>
 				<ul>
 					<% errors.forEach(error => { %>
-					<li><%= error %></li>
+					<li style="color: red">· <%= error %></li>
 					<% }); %>
 				</ul>
 				<% } %>

@@ -3,38 +3,44 @@
 	<%- include('partials/header', {title}) %>
 	<body>
 		<%- include('partials/nav') %>
-		<h1><%= title %></h1>
 		<main>
+            <h1><%= title %></h1>
 			<form action="/all/update/<%= item._id %>" method="POST">
                 <input type="hidden" name="_method" value="PUT">
 
-                <label for="name">Name: </label>
-                <input type="text" name="name" minlength="3" value="<%= item.name %>" required>
-                <br>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" minlength="3" value="<%= item.name %>" required>
+                </div>
             
-                <label for="description">Description: </label>
-                <textarea name="description" minlength="10" required><%= item.description %></textarea>
-                <br>
+                <div>
+                    <label for="description">Description: </label>
+                    <textarea name="description" minlength="10" required><%= item.description %></textarea>
+                </div>
             
-                <label for="price">Price: </label>
-                <input type="number" name="price" min="1" max="99999" value="<%= item.price %>" required >
-                <br>
+                <div>
+                    <label for="price">Price: </label>
+                    <input type="number" name="price" min="1" max="99999" value="<%= item.price %>" required >
+                </div>
             
-                <label for="category">Category: </label>
-                <select name="category" required>
-                    <% categories.forEach(category => {%>
-                        <option 
-                            value="<%= category.name %>"
-                            <% if(category.name === preselected) { %> selected <% } %>  
-                        >
-                        <%= category.name %>
-                        </option>
-                    <% }); %>
-                </select>
-                <br>
+                <div>
+                    <label for="category">Category: </label>
+                    <select name="category" required>
+                        <% categories.forEach(category => {%>
+                            <option
+                                value="<%= category.name %>"
+                                <% if(category.name === preselected) { %> selected <% } %>
+                            >
+                            <%= category.name %>
+                            </option>
+                        <% }); %>
+                    </select>
+                </div>
             
-                <label for="stock">Stock: </label>
-                <input type="number" name="stock" min="1" max="99999" value="<%= item.stock %>" required>
+                <div>
+                    <label for="stock">Stock: </label>
+                    <input type="number" name="stock" min="1" max="99999" value="<%= item.stock %>" required>
+                </div>
             
                 <button type="submit">Submit</button>
             

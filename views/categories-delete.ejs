@@ -3,8 +3,8 @@
 	<%- include('partials/header', {title}) %>
 	<body>
 		<%- include('partials/nav') %>
-		<h1><%= title %></h1>
 		<main>
+			<h1><%= title %></h1>
 			<div class="detailCard">
 				<h2><%= category.name %></h2>
 				<p>Description: <%= category.description %></p>
@@ -22,11 +22,10 @@
 					The following items depend on this category, can't delete category while items
 					depend on it
 				</p>
+				<hr>
 				<% dependencies.forEach(dependency => {%>
 				<div>
-					<a href="<%= dependency.url %>">
-						<h3><%= dependency.name %></h3>
-					</a>
+					<h3><a href="<%= dependency.url %>"><%= dependency.name %></a></h3>
 				</div>
 			<% }); } else { %>
 			<h3>Are you sure you want to delete this category?</h3>

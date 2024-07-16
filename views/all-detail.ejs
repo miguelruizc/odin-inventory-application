@@ -3,9 +3,10 @@
 	<%- include('partials/header', {title}) %>
 	<body>
 		<%- include('partials/nav') %>
-		<h1><%= title %></h1>
 		<main>
+			<h1><%= title %></h1>
 			<a href="/all/update/<%= item._id %>">Update item</a>
+			|
 			<a href="/all/delete/<%= item._id %>">Delete item</a>
 			<hr />
 			<div class="detailCard">

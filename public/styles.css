@@ -1,0 +1,101 @@
+:root {
+	/* --primary-color: rgb(164, 36, 255);
+	--primary-color: rgb(152, 123, 89);
+	--primary-color: rgb(255, 116, 52); */
+	--primary-color: rgb(45, 122, 255);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100svh;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	background-color: var(--primary-color);
+	color: white;
+	width: 120px;
+	padding: 16px;
+	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+	display: block;
+	width: 100%;
+}
+
+nav a:hover {
+	background-color: white;
+	color: var(--primary-color);
+}
+
+main {
+	padding: 16px;
+	flex: 1;
+	color: #101010;
+}
+
+main a {
+	outline: 1px solid var(--primary-color);
+	padding: 0 8px;
+}
+
+main a:hover {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+hr {
+	margin-bottom: 16px;
+}
+
+.itemCard,
+.categoryCard {
+	margin-bottom: 16px;
+}
+
+ul {
+	list-style: none;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+}
+
+form button {
+	padding: 0 8px;
+	align-self: center;
+}
+
+input,
+textarea {
+	font-family: Arial, sans-serif; /* Replace with your desired font stack */
+}
+
+input,
+p,
+textarea,
+form {
+	max-width: 600px;
+}
+
+textarea {
+	resize: vertical;
+}
