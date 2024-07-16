@@ -1,1 +1,1 @@
--Add correct status codes on renders
+-Move functions in routes to controllers
