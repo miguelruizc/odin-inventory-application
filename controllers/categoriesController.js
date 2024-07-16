@@ -1,3 +1,6 @@
+const Category = require('../models/Category');
+const Item = require('../models/Item');
+
 const GET_categories = async (req, res) => {
 	const categories = await Category.find({}).sort({ updatedAt: -1 });
 

@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Category = require('../models/Category');
-const Item = require('../models/Item');
 const {
 	GET_categories,
 	GET_add,
@@ -13,7 +11,7 @@ const {
 
 router.get('/', GET_categories);
 
-router.get('/add', GET_categories_add);
+router.get('/add', GET_add);
 
 router.get('/delete/:id', GET_delete_id);
 
