@@ -10,6 +10,7 @@ const otherRouter = require('./routes/other.js');
 const { hiddenMethodsHandler } = require('./utils.js');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -37,8 +38,8 @@ mongoose
 	.connect(process.env.MONGODB_URI, {})
 	.then(() => {
 		console.log('Connected to MongoDB');
-		app.listen(3000, () => {
-			console.log('Server running, listening port 3000...');
+		app.listen(PORT, () => {
+			console.log(`Server running, listening port ${PORT}...`);
 		});
 	})
 	.catch((error) => console.error(error));
