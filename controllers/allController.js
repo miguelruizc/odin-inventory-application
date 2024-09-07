@@ -1,5 +1,6 @@
 const Item = require('../models/Item');
 const Category = require('../models/Category');
+const mongoose = require('mongoose');
 const { validateItemDataAsync } = require('../utils');
 
 const GET_all = async (req, res) => {
@@ -22,7 +23,12 @@ const GET_add = async (req, res) => {
 };
 
 const GET_delete_id = async (req, res) => {
+	// Check if the ID is a valid ObjectId
 	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+
 	const item = await Item.findById(id);
 
 	if (item) res.render('all-delete.ejs', { title: 'Delete item', item });
@@ -30,8 +36,11 @@ const GET_delete_id = async (req, res) => {
 };
 
 const DELETE_delete_id = async (req, res) => {
+	// Check if the ID is a valid ObjectId
 	const id = req.params.id;
-
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
 	const deletedItem = await Item.findByIdAndDelete(id);
 	console.log('Item successfully deleted: ');
 	console.log(deletedItem);
@@ -40,7 +49,13 @@ const DELETE_delete_id = async (req, res) => {
 };
 
 const GET_id = async (req, res) => {
-	const item = await Item.findById(req.params.id);
+	// Check if the ID is a valid ObjectId
+	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+
+	const item = await Item.findById(id);
 	if (item) res.render('all-detail.ejs', { title: 'Details', item });
 	else console.log('Error: no item match id');
 };
@@ -94,7 +109,12 @@ const POST_add = async (req, res) => {
 };
 
 const GET_update_id = async (req, res) => {
-	const item = await Item.findById(req.params.id);
+	// Check if the ID is a valid ObjectId
+	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+	const item = await Item.findById(id);
 	const categories = await Category.find({});
 
 	if (item)
@@ -109,8 +129,12 @@ const GET_update_id = async (req, res) => {
 };
 
 const PUT_update_id = async (req, res) => {
-	// Validate data
+	// Check if the ID is a valid ObjectId
 	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+	// Validate data
 	const name = req.body.name.trim();
 	const description = req.body.description.trim();
 	const price = req.body.price;

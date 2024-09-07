@@ -13,7 +13,13 @@ const GET_add = (req, res) => {
 };
 
 const GET_delete_id = async (req, res) => {
-	const category = await Category.findById(req.params.id);
+	// Check if the ID is a valid ObjectId
+	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+
+	const category = await Category.findById(id);
 
 	// Find dependencies
 	const dependencies = await Item.find({ category: category.name });
@@ -28,7 +34,12 @@ const GET_delete_id = async (req, res) => {
 };
 
 const DELETE_delete_id = async (req, res) => {
+	// Check if the ID is a valid ObjectId
 	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+
 	const category = await Category.findById(id);
 
 	// Find dependencies
@@ -45,7 +56,13 @@ const DELETE_delete_id = async (req, res) => {
 };
 
 const GET_id = async (req, res) => {
-	const category = await Category.findById(req.params.id);
+	// Check if the ID is a valid ObjectId
+	const id = req.params.id;
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		return res.redirect('/404');
+	}
+
+	const category = await Category.findById(req.id);
 	if (category) res.render('categories-detail.ejs', { title: 'Details', category });
 	else console.log('Error: no category match id');
 };
